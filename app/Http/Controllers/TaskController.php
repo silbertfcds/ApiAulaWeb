@@ -26,7 +26,9 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return response()->json([
+            'message' => 'create'
+        ]);
     }
 
     /**
@@ -46,9 +48,6 @@ class TaskController extends Controller
             'task' => $task
         ]);
 
-        // return response()->json([
-        //     'message' => 'tarefa cadastrada com sucesso'
-        // ]);
     }
 
     /**
